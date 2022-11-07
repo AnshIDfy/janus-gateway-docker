@@ -76,17 +76,17 @@ RUN cd ~ \
 
 COPY conf/*.jcfg /opt/janus/etc/janus/
 
-ENV PORT=8088
+ENV PORT=8288
 # RUN apt-get install nginx -y
 # COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 COPY ./ports.conf /etc/apache2/ports.conf
 
-EXPOSE 8188 
+EXPOSE 8288 
 EXPOSE 10000-10200/udp
 
 # CMD service nginx restart && /opt/janus/bin/janus 
-CMD /opt/janus/bin/janus -p 8188
+CMD /opt/janus/bin/janus -p 8288
 
 # -r 10000-10200
 # --nat-1-1=${DOCKER_IP}

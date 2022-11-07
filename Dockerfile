@@ -80,7 +80,7 @@ ENV PORT 8088
 # RUN apt-get install nginx -y
 # COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 8188 
+EXPOSE 8288 
 EXPOSE 10000-10200/udp
 
 # CMD service nginx restart && /opt/janus/bin/janus 
